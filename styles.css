@@ -302,6 +302,14 @@
     border: 1px solid var(--slate-700);
     border-radius: 0.5rem;
     overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Aggiunge una transizione dolce */
+
+  }
+
+  .project-card:hover {
+    /* Puoi aggiungere uno stile al passaggio del mouse, se necessario */
+    opacity: 0.8; /* Ad esempio, rendere leggermente trasparente al passaggio del mouse */
+    transform: translateY(-10px); /* Muove leggermente verso l'alto */
   }
   
   .project-image {
