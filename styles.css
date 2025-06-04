@@ -92,6 +92,10 @@
     gap: 2rem;
   }
   
+  .underline {
+    text-decoration: underline;
+    }
+  
   @media (min-width: 768px) {
     .two-columns {
       grid-template-columns: 1fr 1fr;
@@ -391,5 +395,6 @@
       width: 100%;
       text-align: center;
     }
+
   }
   
