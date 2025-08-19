@@ -232,6 +232,50 @@
     background-color: rgba(15, 23, 42, 0.5);
   }
   
+  /* Focus Section */
+  .focus {
+    background-color: rgba(15, 23, 42, 0.35);
+  }
+  
+  .focus-list {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 1.25rem;
+  }
+ 
+  .focus-item {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    align-items: start;
+    column-gap: 0.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--slate-700);
+  }
+ 
+  .focus-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+ 
+  .focus-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: rgba(14, 165, 233, 0.2);
+    color: var(--tech-blue-400);
+  }
+ 
+  @media (min-width: 768px) {
+    .focus-list {
+      gap: 1.5rem;
+    }
+  }
+  
   /* Cards */
   .card {
     background-color: var(--slate-800);
