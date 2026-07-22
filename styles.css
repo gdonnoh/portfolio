@@ -346,12 +346,14 @@
   
   /* Project Cards */
   .project-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
     background-color: var(--slate-800);
     border: 1px solid var(--slate-700);
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Aggiunge una transizione dolce */
-
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   .project-card:hover {
@@ -371,6 +373,119 @@
     object-fit: cover;
   }
   
+  .project-image--outreach {
+    display: grid;
+    place-items: center;
+    padding: 1.25rem;
+    background: linear-gradient(145deg, #111827, #1e1b4b);
+  }
+
+  .outreach-preview {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 0.5rem;
+    background: #0f1117;
+    box-shadow: 0 1rem 2rem rgba(2, 6, 23, 0.35);
+  }
+
+  .outreach-preview-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #252836;
+    color: #e2e8f0;
+    font-size: 0.68rem;
+    font-weight: 700;
+  }
+
+  .outreach-preview-status {
+    color: #10b981;
+    font-size: 0.52rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .outreach-preview-body {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    height: calc(100% - 2.25rem);
+  }
+
+  .outreach-preview-sidebar {
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
+    padding: 0.75rem 0.55rem;
+    border-right: 1px solid #252836;
+    background: #1a1d27;
+  }
+
+  .outreach-preview-sidebar span {
+    height: 0.42rem;
+    border-radius: 999px;
+    background: #334155;
+  }
+
+  .outreach-preview-sidebar span:nth-child(2) {
+    width: 75%;
+    background: #6366f1;
+  }
+
+  .outreach-preview-sidebar span:nth-child(3) {
+    width: 88%;
+  }
+
+  .outreach-preview-sidebar span:nth-child(4) {
+    width: 62%;
+  }
+
+  .outreach-preview-main {
+    padding: 0.75rem;
+  }
+
+  .outreach-preview-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+  }
+
+  .outreach-preview-stats span {
+    padding: 0.45rem 0.2rem;
+    border: 1px solid #252836;
+    border-radius: 0.3rem;
+    color: #94a3b8;
+    background: #1a1d27;
+    font-size: 0.48rem;
+    text-align: center;
+  }
+
+  .outreach-preview-chart {
+    height: 3.5rem;
+    margin-top: 0.65rem;
+    border: 1px solid #252836;
+    border-radius: 0.35rem;
+    background:
+      linear-gradient(135deg, transparent 44%, #6366f1 45%, #6366f1 49%, transparent 50%) 0 0 / 35% 100%,
+      #1a1d27;
+  }
+
+  .project-badges {
+    margin-top: 1rem;
+  }
+
+  .project-links {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-award {
+    margin-bottom: 0;
+    color: var(--slate-400);
+  }
+
   .project-content {
     padding: 1.5rem;
   }
